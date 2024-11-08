@@ -2,6 +2,7 @@
 This system allows the management of pacients, doctors, appointments, cites, and medical history of the pacients. The attributes and methods of each class cover differents aspects of the hospital management.  
 
 Clases: 
+
 -> Person
 Base class that represents any person in the system with attributes like id, name, phone, and methods to show info, and update phone. It’s extended by other classes to avoid redundancy.
 
