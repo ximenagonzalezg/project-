@@ -30,4 +30,5 @@ Example of System Use:
 5. Manage departments: The Department class organizes doctors according to their specialty, facilitating the administration of hospital staff.
 
 This management system is ideal for keeping basic control of the most important aspects of a hospital, organizing appointments, doctors and patients.
+<img width="537" alt="Captura de pantalla 2024-11-08 a la(s) 8 22 40 p m" src="https://github.com/user-attachments/assets/b60bb811-32fc-4482-a1b6-c442b00a5112">
 
