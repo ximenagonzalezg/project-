@@ -1,12 +1,20 @@
 #include <string> 
 using namespace std;
 
+#ifndef PERSON_H
+#define PERSON_H
+
 class Person{
-    private: 
+    protected: 
         int id; 
         string name; 
         string phone; 
     public: 
         Person(int, string, string); 
-        string showInfo(); 
+        void setPhone (string); 
+        int getId(); 
+        string getName(); 
+        string getPhone (); 
+        string getDetails ();  
 }; 
+#endif 
