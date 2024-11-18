@@ -8,9 +8,9 @@ class Doctor: public Person{
         string specialty;  
         Department department;  
     public: 
-        Doctor (int _id, string _name, string _phone, string _specialty, Department department); 
+        Doctor (int _id, string _name, string _phone, string _specialty, Department _department); 
         string getSpecialty();
-        void setDepartment (department);
+        void setDepartment (_department);
         string getDepartment(); 
         string getDetails(); 
 }; 
