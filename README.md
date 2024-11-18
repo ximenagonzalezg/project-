@@ -32,5 +32,6 @@ Example of System Use:
 This management system is ideal for keeping basic control of the most important aspects of a hospital, organizing appointments, doctors and patients.
 
 
-<img width="329" alt="Captura de pantalla 2024-11-17 a la(s) 8 26 15 p m" src="https://github.com/user-attachments/assets/2de2183c-19e0-4c97-b5f8-cc566ac5350c">
+<img width="365" alt="Captura de pantalla 2024-11-17 a la(s) 11 55 57 p m" src="https://github.com/user-attachments/assets/9a31847d-6449-4676-be8e-d65006a93a31">
+
 
