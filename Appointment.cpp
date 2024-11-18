@@ -1,14 +1,40 @@
 #include "Appointment.h"
-void Appointment::setDate(string_date){
-    date=_date
+Appointment::Appointment(Patient _patient, Doctor _doctor){
+    date = "NONE"; 
+    time = "NONE"; 
+    patient = _patient; 
+    doctor = _doctor; 
 }
-void Appointment::setTime(string_time){
-    date=_time
+
+void Appointment::setDate(string _date){
+    date = _date;
 }
-string Appointment::showDetails(){
-    return date
-    return time
+
+void Appointment::setTime(string _time){
+    time = _time;
 }
-bool Appointment::checkAvailabilty(){
-    return true or false
+
+string Appointment::getDate (){
+    return date; 
+}
+
+string Appointment::getTime (){
+    return time; 
+}
+
+Patient Appointment::getPatient (){
+    return patient
+}
+
+Doctor Appointment::getDoctor (){
+    return doctor
+}
+
+string Appointment::getDetails (){
+    string details = "Patient: " + patient.getName()+ "\nDoctor: " + doctor.getName() + "\nDate: " + date + "\nTime: " + time + "\n------\n";
+    return details;
+}
+
+bool Appointment::checkAvailability(string requestedDate){
+    return date != requestedDate
 }
