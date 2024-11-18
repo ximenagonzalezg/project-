@@ -1,15 +1,27 @@
 #include <string> 
 using namespace std;
 
+#ifndef APPOINTMENT_H
+#define APPOINTMENT_H
+
+#include "Patient.cpp"
+#include "Doctor.cpp"
+
 class Appointment{
     private: 
-        int idPacient; 
-        int idDoctor; 
+        Patient patient; 
+        Doctor doctor; 
         string date; 
         string time; 
     public: 
+        Appointment (); 
         void setDate (string); 
         void setTime (string); 
-        string showDetails (); 
+        string getDate(); 
+        string getTime();
+        Patient getPatient(); 
+        Doctor getDoctor();  
+        string getDetails (); 
         bool checkAvailability(); 
 }; 
+#endif 
