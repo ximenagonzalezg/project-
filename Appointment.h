@@ -14,7 +14,7 @@ class Appointment{
         string date; 
         string time; 
     public: 
-        Appointment (); 
+        Appointment (Patient, Doctor); 
         void setDate (string); 
         void setTime (string); 
         string getDate(); 
