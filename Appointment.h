@@ -22,6 +22,6 @@ class Appointment{
         Patient getPatient(); 
         Doctor getDoctor();  
         string getDetails (); 
-        bool checkAvailability(); 
+        bool checkAvailability(string); 
 }; 
 #endif 
