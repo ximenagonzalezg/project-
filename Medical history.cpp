@@ -1,11 +1,18 @@
 #include "Medical history.h"
-void MedicalHistory::setDiagnosis(string_diagnosis){
-    diagnosis=_diagnosis
+MedicalHistory::MedicalHistory(){
+    diagnosis = "NONE"; 
+    treatment = "NONE"; 
 }
-void MedicalHistory::setTreatment(string_treatment){
-    treatment=_treatment
+
+void MedicalHistory::setDiagnosis(string _diagnosis){
+    diagnosis = _diagnosis; 
 }
-string MedicalHistory::showHistory(){
-    return diagnosis
-    return treatment
+
+void MedicalHistory::setTreatment(string _treatment){
+    treatment = _treatment; 
+}
+
+string MedicalHistory::getDetails(){
+    string details = "Diagnosis: " + diagnosis + "\nTreatment: " + treatment + "\n------\n";
+    return details; 
 }
