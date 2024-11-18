@@ -1,14 +1,16 @@
 #include <string> 
+#include <vector>
 using namespace std;
+
+#include "Doctor.cpp"
 
 class Department{
     private: 
-        int idDoctor; 
         string name; 
-        int idDoctors; 
+        list<Doctor> doctors; 
     public: 
-        Department(string); 
-        string addDoctor(int); 
-        string deleteDoctor (int); 
-        string showDoctors (); 
+        Department(string);
+        list<Doctor> showDoctors ();  
+        void addDoctor(doctor); 
+        void deleteDoctor (doctor); 
 }; 
