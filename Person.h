@@ -1,27 +1,20 @@
-#include "Person.h"
-Person::Person(int _id, string _name, string _phone){
-    id = _id; 
-    name = _name; 
-    phone = _phone; 
-}
+#include <string> 
+using namespace std;
 
-void Person::setPhone(string _phone){
-    phone = _phone; 
-}
+#ifndef PERSON_H
+#define PERSON_H
 
-int Person::getId(){
-    return id; 
-}
-
-string Person::getName(){ 
-    return name;
-}
-
-string Person::getPhone(){
-    return phone;
-}
-    
-string Person::getDetails(){
-    string details = "ID: " + to_string (id) + "\nName: " + name + "\nPhone: " + phone + "\n------\n";
-    return details; 
-}
+class Person{
+    protected: 
+        int id; 
+        string name; 
+        string phone; 
+    public: 
+        Person(int, string, string); 
+        void setPhone (string); 
+        int getId(); 
+        string getName(); 
+        string getPhone (); 
+        string getDetails ();  
+}; 
+#endif // PERSON_H
