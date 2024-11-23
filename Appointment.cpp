@@ -3,9 +3,9 @@ Appointment::Appointment(Patient _patient, Doctor _doctor){
     date = "NONE"; 
     time = "NONE"; 
     patient = _patient; 
-    doctor = _doctor; 
+    doctor = _doctor;
 }
-
+    
 void Appointment::setDate(string _date){
     date = _date;
 }
@@ -23,11 +23,11 @@ string Appointment::getTime (){
 }
 
 Patient Appointment::getPatient (){
-    return patient
+    return patient; 
 }
 
 Doctor Appointment::getDoctor (){
-    return doctor
+    return doctor; 
 }
 
 string Appointment::getDetails (){
@@ -35,6 +35,6 @@ string Appointment::getDetails (){
     return details;
 }
 
-bool Appointment::checkAvailability(string requestedDate){
-    return date != requestedDate
+bool Appointment::checkAvailability(string _date){
+    return date != _date; 
 }
