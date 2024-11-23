@@ -1,18 +1,22 @@
+#include <algorithm> 
 #include "Department.h"
-Department::Department::(string _name){
-    name = _name
+Department::Department(string _name){
+    name = _name; 
 }
 
-list<Doctor> Department::showDoctors(){
-    return doctors;    
+vector<Doctor> Department::showDoctors(){
+    return doctors; 
 }
 
-void Department::addDoctor(doctor _doctor){
+void Department::addDoctor(Doctor _doctor){
     doctors.push_back(_doctor); 
 }
 
-void Department::deleteDoctor(doctor _doctor){
-    doctors.pop_back() 
-    /*I didn't find how to do this action, because pop_back is for deleting the last item
-    but I want to delete an specific one but I also don't have its index :( */
+void Department::deleteDoctor(Doctor _doctor){
+    for (auto it = doctors.begin(); it != doctors.end(); ++it) {
+        if (it->getId() == _doctor.getId()) {
+            doctors.erase(it);
+            break;
+        }
+    }
 }
