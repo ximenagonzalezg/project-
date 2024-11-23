@@ -12,6 +12,10 @@ void Patient::setAddress (string _address){
     address = _address; 
 } 
 
+void Patient::setMedicalHistory (MedicalHistory _medicalHistory){
+    medicalHistory = _medicalHistory; 
+}
+
 int Patient::getAge(){ 
     return age;
 }
