@@ -17,9 +17,10 @@ class Patient: public Person{
         Patient (int _id, string _name, string _phone, int _age, string _address); 
         void setAge(int);
         void setAddress(string);
+        void setMedicalHistory (MedicalHistory); 
         int getAge (); 
         string getAddress (); 
         MedicalHistory getMedicalHistory (); 
         string getDetails(); 
 }; 
-#endif 
+#endif // PATIENT_H
