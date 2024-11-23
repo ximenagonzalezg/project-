@@ -14,4 +14,4 @@ class MedicalHistory{
         void setTreatment (string); 
         string getDetails (); 
 }; 
-#endif
+#endif // MEDICAL HISTORY_H
