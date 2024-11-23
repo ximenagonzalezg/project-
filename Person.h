@@ -17,4 +17,4 @@ class Person{
         string getPhone (); 
         string getDetails ();  
 }; 
-#endif 
+#endif // PERSON_H
