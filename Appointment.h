@@ -12,7 +12,7 @@ class Appointment{
         Patient patient; 
         Doctor doctor; 
         string date; 
-        string time; 
+        string time;
     public: 
         Appointment (Patient, Doctor); 
         void setDate (string); 
@@ -24,4 +24,4 @@ class Appointment{
         string getDetails (); 
         bool checkAvailability(string); 
 }; 
-#endif 
+#endif // APPOINTMENT_H
