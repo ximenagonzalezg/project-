@@ -16,11 +16,11 @@ This system allows the management of pacients, doctors, appointments, department
 - Department: Groups Doctor objects to simulate real-world departamental organization and supports operations like adding and removin doctors. 
 
 Example of System Use:
-Register a patient: An instance of Patient is created and its information is saved.
-Register a doctor: The Doctor class stores the doctor's information and specialty.
-Schedule an Appointment: An Appointment instance is created that links the patient to the doctor on a specific date and time.
-Update medical history: In the Medical History class, diagnoses and treatments are added as the patient receives medical care.
-Manage departments: The Department class organizes doctors according to their specialty, facilitating the administration of hospital staff.
+- Register a patient: An instance of Patient is created and its information is saved.
+- Register a doctor: The Doctor class stores the doctor's information and specialty.
+- Schedule an Appointment: An Appointment instance is created that links the patient to the doctor on a specific date and time.
+- Update medical history: In the Medical History class, diagnoses and treatments are added as the patient receives medical care.
+- Manage departments: The Department class organizes doctors according to their specialty, facilitating the administration of hospital staff.
 This management system is ideal for keeping basic control of the most important aspects of a hospital, organizing appointments, doctors and patients.
 
 Finally, my project is not ideal for small clinics or offices where centralized management is unnecessary. It’s also not suited for areas with limited technological infrastructure, resistance to automation, or the need for complex integrations with external systems.
