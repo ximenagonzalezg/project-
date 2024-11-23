@@ -30,21 +30,14 @@ int main() {
     p1.setMedicalHistory(medicalHistory1);
 
     cout << "\nPatient Details:\n";
-    cout << "Name: " << p1.getName() << "\n";
-    cout << "Age: " << p1.getAge() << "\n";
-    cout << "Address: " << p1.getAddress() << "\n";
-    cout << "Diagnosis: " << p1.getMedicalHistory().getDiagnosis() << "\n";
-    cout << "Treatment: " << p1.getMedicalHistory().getTreatment() << "\n";
+    cout << p1.getDetails() << "\n";
 
     Appointment apt (p1, d1);
     apt.setDate("2024-11-23");
     apt.setTime("10:00 AM");
 
     cout << "\nAppointment Details:\n";
-    cout << "Patient: " << p1.getName() << "\n";
-    cout << "Doctor: " << apt.getDoctor().getName() << "\n";
-    cout << "Date: " << apt.getDate() << "\n";
-    cout << "Time: " << apt.getTime() << "\n";
+    cout <<apt.getDetails() << "\n";
 
     dpt.deleteDoctor(d2);
 
